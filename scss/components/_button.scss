@@ -16,10 +16,6 @@
         color: a.$color-cyan-dark;
     }
 
-    &:hover {
-        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
-    }
-
     &:active {
         transform: translateY(3px);
     }
@@ -27,10 +23,19 @@
     &--white {
         background-color: #fff;
         box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+
+        &:hover {
+            box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+        }
     }
 
     &--pink {
         color: #fff;
         background-color: a.$color-pink;
+        padding: 1.5rem 7rem;
+
+        &:hover {
+            box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.4);
+        }
     }
 }

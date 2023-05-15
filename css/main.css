@@ -13,6 +13,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -24,12 +29,15 @@ h6 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: var(--color-cyan-dark);
+  color: hsl(192, 100%, 9%);
   font-size: 1.8rem;
 }
 
 .button {
+  display: inline-block;
   text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
   font-size: 1.4rem;
   font-weight: 700;
   padding: 1rem 5rem;
@@ -37,10 +45,7 @@ body {
   transition: all 0.2s ease-out;
 }
 .button:link, .button:visited {
-  color: var(--color-cyan-dark);
-}
-.button:hover {
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+  color: hsl(192, 100%, 9%);
 }
 .button:active {
   transform: translateY(3px);
@@ -49,31 +54,55 @@ body {
   background-color: #fff;
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
 }
+.button--white:hover {
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+}
+.button--pink {
+  color: #fff;
+  background-color: hsl(322, 100%, 66%);
+  padding: 1.5rem 7rem;
+}
+.button--pink:hover {
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.4);
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  margin-bottom: 8rem;
 }
 .header__logo {
   width: 20rem;
   cursor: pointer;
 }
 
-:root {
-  --color-pink: hsl(322, 100%, 66%);
-  --color-cyan-pale: hsl(193, 100%, 96%);
-  --color-cyan-dark: hsl(192, 100%, 9%);
-  --color-blue-gray: hsl(208, 11%, 55%);
-}
-
 .hero {
   height: 80vh;
-  background-color: var(--color-cyan-pale);
+  background-color: hsl(193, 100%, 96%);
   background-image: url("../../assets/images/bg-hero-desktop.svg");
   background-size: cover;
   background-position: center;
+  padding: 5rem 8rem;
+}
+.hero__main {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__content {
+  max-width: 53rem;
+  align-self: flex-end;
+  margin-bottom: 9rem;
+}
+.hero__title {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+.hero__description {
+  margin-bottom: 4rem;
+}
+.hero__image {
+  width: 68rem;
 }
 
 /*# sourceMappingURL=main.css.map */
