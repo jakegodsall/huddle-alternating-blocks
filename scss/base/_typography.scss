@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
 h1,
@@ -11,6 +13,6 @@ h6 {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--color-cyan-dark);
+    color: a.$color-cyan-dark;
     font-size: 1.8rem; // brings font-size to 18px as in specification
 }
