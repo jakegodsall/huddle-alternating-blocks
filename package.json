@@ -1,0 +1,24 @@
+{
+    "name": "huddle-alternating-blocks",
+    "version": "1.0.0",
+    "description": "Solution to the Huggle Landing Page with Alternating Feature Blocks",
+    "main": "index.js",
+    "scripts": {
+        "dev": "live-server",
+        "sass:watch": "sass --watch scss/main.scss css/main.css",
+        "start": "npm-run-all --parallel dev sass:watch"
+    },
+    "keywords": [
+        "frontendmentor",
+        "html5",
+        "css3",
+        "sass",
+        "7-1architecture"
+    ],
+    "author": "Jake Godsall",
+    "license": "ISC",
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.62.1"
+    }
+}
