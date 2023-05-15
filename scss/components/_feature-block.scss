@@ -1,0 +1,32 @@
+@use '../abstracts' as a;
+
+.feature-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 12rem 1.6rem;
+    margin-inline: 10.4rem;
+    border-radius: 1.6rem;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+    height: 42rem;
+
+    &__content {
+        max-width: 48rem;
+    }
+
+    &__title {
+        font-size: 2.8rem;
+    }
+
+    &__description {
+        color: a.$color-font-secondary;
+    }
+
+    &__image {
+        max-width: 42rem;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
