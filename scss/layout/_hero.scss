@@ -1,7 +1,7 @@
 @use '../abstracts' as a;
 
 .hero {
-    height: 75vh;
+    height: 85vh;
 
     background-color: a.$color-cyan-pale;
     background-image: url('../../assets/images/bg-hero-desktop.svg');

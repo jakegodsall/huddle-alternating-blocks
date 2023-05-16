@@ -1,0 +1,66 @@
+@use '../abstracts/' as a;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 14.4rem 12rem 6.4rem 7.8rem;
+
+    background-color: a.$color-font-primary;
+
+    color: #fff;
+    font-size: 1.4rem;
+
+    &__logo {
+        width: 15.2rem;
+        color: #fff;
+        margin-bottom: 3.2rem;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contactItem {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        max-width: 38rem;
+    }
+
+    &__nav {
+        margin-left: 13rem;
+    }
+
+    &__navList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.2rem 14rem;
+    }
+
+    &__navItem {
+    }
+
+    &__socials {
+        margin-top: 1.4rem;
+        margin-left: auto;
+    }
+
+    &__socialItem {
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    &__copyright {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
