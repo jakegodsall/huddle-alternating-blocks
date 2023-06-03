@@ -67,6 +67,12 @@ body {
 .button--white:hover {
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 600px) {
+  .button--white {
+    font-size: 1rem;
+    padding: 0.4rem 2.2rem;
+  }
+}
 .button--pink {
   color: #fff;
   background-color: hsl(322, 100%, 66%);
@@ -169,6 +175,11 @@ body {
 .header__logo {
   width: 20rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .header__logo {
+    width: 10.4rem;
+  }
 }
 
 .hero {

@@ -4,8 +4,15 @@
     align-items: center;
     margin-bottom: 8rem;
 
+    @media only screen and (max-width: 600px) {
+    }
+
     &__logo {
         width: 20rem;
         cursor: pointer;
+
+        @media only screen and (max-width: 600px) {
+            width: 10.4rem;
+        }
     }
 }
