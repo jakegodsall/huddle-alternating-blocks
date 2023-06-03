@@ -1,7 +1,7 @@
 @use '../abstracts' as a;
 
 .hero {
-    height: 85vh;
+    height: 90rem;
 
     background-color: a.$color-cyan-pale;
     background-image: url('../../assets/images/bg-hero-desktop.svg');
@@ -9,27 +9,71 @@
     background-position: center;
     padding: 5rem 8rem;
 
+    @media only screen and (max-width: 600px) {
+        padding-inline: 3.5rem;
+        height: 72rem;
+    }
+
     &__main {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+
+        @media only screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: 600px) {
+            gap: 5.6rem;
+        }
     }
 
     &__content {
         max-width: 53rem;
         align-self: flex-end;
         margin-bottom: 9rem;
+
+        @media only screen and (max-width: 1000px) {
+            text-align: center;
+            align-self: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 0;
+        }
     }
 
     &__title {
         font-size: 4rem;
         text-transform: capitalize;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+        }
     }
 
     &__description {
         margin-bottom: 4rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.6rem;
+            line-heihgt: 2.4rem;
+        }
     }
 
     &__image {
-        width: 68rem;
+        max-width: 68rem;
+        width: 50vw;
+
+        @media only screen and (max-width: 1400px) {
+            width: 40vw;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            width: 60vw;
+            min-width: 30rem;
+        }
     }
 }

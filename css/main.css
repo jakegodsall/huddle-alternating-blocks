@@ -51,7 +51,7 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   padding: 1rem 5rem;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s ease-out;
 }
 .button:link, .button:visited {
@@ -172,31 +172,84 @@ body {
 }
 
 .hero {
-  height: 85vh;
+  height: 90rem;
   background-color: hsl(193, 100%, 96%);
   background-image: url("../../assets/images/bg-hero-desktop.svg");
   background-size: cover;
   background-position: center;
   padding: 5rem 8rem;
 }
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-inline: 3.5rem;
+    height: 72rem;
+  }
+}
 .hero__main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .hero__main {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero__main {
+    gap: 5.6rem;
+  }
 }
 .hero__content {
   max-width: 53rem;
   align-self: flex-end;
   margin-bottom: 9rem;
 }
+@media only screen and (max-width: 1000px) {
+  .hero__content {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero__content {
+    margin-bottom: 0;
+  }
+}
 .hero__title {
   font-size: 4rem;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 600px) {
+  .hero__title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
 .hero__description {
   margin-bottom: 4rem;
 }
+@media only screen and (max-width: 600px) {
+  .hero__description {
+    font-size: 1.6rem;
+    line-heihgt: 2.4rem;
+  }
+}
 .hero__image {
-  width: 68rem;
+  max-width: 68rem;
+  width: 50vw;
+}
+@media only screen and (max-width: 1400px) {
+  .hero__image {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hero__image {
+    width: 60vw;
+    min-width: 30rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
