@@ -99,12 +99,30 @@ body {
   padding: 5.6rem 13.2rem 5.2rem;
   width: 80rem;
 }
+@media only screen and (max-width: 1000px) {
+  .callout-box {
+    max-width: 35.2rem;
+    padding: 4.1rem 1.2rem;
+  }
+}
 .callout-box__title {
   font-size: 3.2rem;
   line-height: 6rem;
 }
+@media only screen and (max-width: 1000px) {
+  .callout-box__title {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+}
 .callout-box__button {
   padding: 2.5rem 10rem;
+}
+@media only screen and (max-width: 1000px) {
+  .callout-box__button {
+    font-size: 1rem;
+    padding: 1.25rem 5rem;
+  }
 }
 
 .feature-block {
