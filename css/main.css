@@ -92,20 +92,53 @@ body {
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
   height: 42rem;
 }
+@media only screen and (max-width: 1000px) {
+  .feature-block {
+    flex-direction: column-reverse;
+    max-width: 60rem;
+    text-align: center;
+    height: auto;
+    width: auto;
+    gap: 2.4rem;
+    padding: 2.4rem 4rem 3.2rem 4rem;
+  }
+}
 .feature-block__content {
   max-width: 48rem;
 }
 .feature-block__title {
   font-size: 2.8rem;
 }
+@media only screen and (max-width: 1000px) {
+  .feature-block__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
 .feature-block__description {
   color: hsl(208, 12%, 55%);
+}
+@media only screen and (max-width: 1000px) {
+  .feature-block__description {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
 }
 .feature-block__image {
   max-width: 42rem;
 }
+@media only screen and (max-width: 1000px) {
+  .feature-block__image {
+    max-width: 25.6rem;
+  }
+}
 .feature-block--reverse {
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 1000px) {
+  .feature-block--reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .features {
@@ -113,6 +146,12 @@ body {
   flex-direction: column;
   margin: 16rem 0;
   gap: 4rem;
+}
+@media only screen and (max-width: 1000px) {
+  .features {
+    margin-top: 5.9rem;
+    align-items: center;
+  }
 }
 
 .footer {
@@ -183,12 +222,17 @@ body {
 }
 
 .hero {
-  height: 90rem;
+  height: 74rem;
   background-color: hsl(193, 100%, 96%);
   background-image: url("../../assets/images/bg-hero-desktop.svg");
   background-size: cover;
   background-position: center;
   padding: 5rem 8rem;
+}
+@media only screen and (max-width: 1000px) {
+  .hero {
+    height: 110rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .hero {

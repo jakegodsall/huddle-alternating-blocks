@@ -1,13 +1,17 @@
 @use '../abstracts' as a;
 
 .hero {
-    height: 90rem;
+    height: 74rem;
 
     background-color: a.$color-cyan-pale;
     background-image: url('../../assets/images/bg-hero-desktop.svg');
     background-size: cover;
     background-position: center;
     padding: 5rem 8rem;
+
+    @media only screen and (max-width: 1000px) {
+        height: 110rem;
+    }
 
     @media only screen and (max-width: 600px) {
         padding-inline: 3.5rem;
