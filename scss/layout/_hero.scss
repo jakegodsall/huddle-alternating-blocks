@@ -55,6 +55,8 @@
         @media only screen and (max-width: 600px) {
             font-size: 2.4rem;
             line-height: 3.6rem;
+
+            animation: slideFromLeft 1.5s ease-out;
         }
     }
 
@@ -63,7 +65,9 @@
 
         @media only screen and (max-width: 600px) {
             font-size: 1.6rem;
-            line-heihgt: 2.4rem;
+            line-height: 2.4rem;
+
+            animation: slideFromRight 1.5s ease-out;
         }
     }
 

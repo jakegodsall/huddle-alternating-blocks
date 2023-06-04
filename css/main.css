@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(8rem);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 *,
 *::before,
 *::after {
@@ -399,6 +425,7 @@ body {
   .hero__title {
     font-size: 2.4rem;
     line-height: 3.6rem;
+    animation: slideFromLeft 1.5s ease-out;
   }
 }
 .hero__description {
@@ -407,7 +434,8 @@ body {
 @media only screen and (max-width: 600px) {
   .hero__description {
     font-size: 1.6rem;
-    line-heihgt: 2.4rem;
+    line-height: 2.4rem;
+    animation: slideFromRight 1.5s ease-out;
   }
 }
 .hero__button {
