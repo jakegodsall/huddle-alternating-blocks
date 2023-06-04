@@ -57,6 +57,7 @@
             line-height: 3.6rem;
 
             animation: slideFromLeft 1.5s ease-out;
+            animation-fill-mode: backwards;
         }
     }
 
@@ -68,11 +69,17 @@
             line-height: 2.4rem;
 
             animation: slideFromRight 1.5s ease-out;
+            animation-fill-mode: backwards;
         }
     }
 
     &__button {
         padding: 2rem 8rem;
+
+        @media only screen and (max-width: 600px) {
+            animation: slideFromBottom 1.5s ease-out;
+            animation-fill-mode: backwards;
+        }
     }
 
     &__image {
@@ -86,6 +93,10 @@
         @media only screen and (max-width: 1000px) {
             width: 60vw;
             min-width: 30rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            animation: slideFromBottom 1.5s ease-out;
         }
     }
 }

@@ -5,6 +5,8 @@
     margin-bottom: 8rem;
 
     @media only screen and (max-width: 600px) {
+        animation: fadeIn 2s ease-out;
+        animation-fill-mode: backwards;
     }
 
     &__logo {
