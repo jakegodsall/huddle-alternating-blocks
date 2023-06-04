@@ -215,6 +215,16 @@ body {
   color: #fff;
   margin-bottom: 3.2rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer__logo {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer__logo {
+    align-self: flex-start;
+  }
+}
 .footer__content {
   position: relative;
   display: flex;
